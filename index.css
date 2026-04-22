@@ -1,0 +1,156 @@
+@media (width > 1000px){
+    body{
+        font-size: 18px;
+    }
+}
+
+
+.bitcount-grid-double{
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+:root{
+    --my-border-color: rgb(253, 171, 89);
+}
+
+*{
+    min-width: 1px;
+    max-width: 5000px;
+}
+
+/*stylize the headers*/
+#myHeader{
+    color: hsl(250, 100%, 51%);
+    border: 1px solid var(--my-border-color, navy);
+    background-color: color(display-p3 1 0.5 0);
+    text-align: center;
+    text-decoration-line: underline;
+    position: relative;
+}
+
+/*Stylize the Fun Cat Section*/
+#yayay{
+    background-color: color-mix(in hsl, hsl(125 60 90), salmon 85%);
+    font-size: 200%;
+    margin: auto;
+    position: static;
+}
+
+/*stylize the box for the Attendance box*/
+.box{
+    width: 450px;
+    height: 20px;
+    margin: 10px 20px 20px 10px;
+    padding: 20px 20px 20px 20px;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+
+    border-top-color: rgb(81,55,255);
+    border-bottom-color: rgb(81,55,255);
+    border-left-color: rgb(81,55,255);
+    border-right-color: rgb(81,55,255);
+
+    border-top-width:5px;
+    border-bottom-width:5px;
+    border-left-width:5px;
+    border-right-width:5px;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 50px;
+}
+
+/*stylize the box for the Favorite Animal box*/
+.beatbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+
+    border-color: rgb(255, 55, 82) rgb(0, 55, 82) rgb(0, 55, 82) rgb(255, 55, 82);
+    border-width: 5px 10px 5px 10px;
+    border-style: dashed hidden dashed hidden;
+    border-radius: 10% 15% 10% 15%;
+}
+
+ol{
+    display: inline-block;
+}
+
+li{
+    display: block;
+}
+
+text,textarea:focus{
+    background-color: linen;
+}
+
+button:hover{
+    background-color: red;
+}
+
+a:visted{
+    color:pink;
+}
+
+figure{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-content:flex-start;
+}
+
+[class="payed"]{
+    display:grid;
+    grid-template: auto /auto auto;
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: center;
+    background-color:white;
+}
+
+section p{
+    color:crimson;
+}
+
+ul > li{
+    color:darkslateblue;
+}
+
+h3 + p{
+    border-color: rgb(255, 55, 82) rgb(0, 55, 82) rgb(0, 55, 82) rgb(255, 55, 82);
+    border-width: 5px 10px 5px 10px;
+    border-style: dashed hidden dashed hidden;
+    border-radius: 10% 15% 10% 15%;
+}
+
+legend ~ label{
+    color:green;
+}
+
+body:has(.abc){
+    border: 2px solid black;
+}
+
+p{
+    & > b{
+        color:green;
+    }
+}
