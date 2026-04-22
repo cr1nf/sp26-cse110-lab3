@@ -5,20 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body{
+        background-color: linen;
+        font-size:16px;
+      }
+    </style>
   </head>
   <body>
     
     <header>
-    <h1>My Website Title</h1>
+    <h1 style="text-align:center;">My Website Title</h1>
     <hr>
       <nav>
         <div>
-          <h2>Agenda</h2>
+          <h2 id="myHeader">Agenda</h2>
           <ol>
-            <li>How much should the lead get paid?</li>
-            <li>How much should the secretary get paid?</li>
-            <li>How much should the designer get paid?</li>
-            <li>How much should the moral support get paid?</li>
+            <li class="bitcount-grid-double">How much should the lead get paid?</li>
+            <li class="bitcount-grid-double">How much should the secretary get paid?</li>
+            <li class="bitcount-grid-double">How much should the designer get paid?</li>
+            <li class="bitcount-grid-double">How much should the moral support get paid?</li>
           </ol>
         </div>
       </nav>
@@ -29,51 +36,54 @@
 
     <main>
       <section>
-        <h3>Attendance</h3>
+        <h3 id="myHeader">Attendance</h3>
         <p>Everyone is <i>here</i> </p>
       </section>
       <hr>
 
       <section>
-        <h3>Lead Pay</h3>
+        <h3 id="myHeader">Lead Pay</h3>
         <p>we all believe that the lead <em>doesn't do enough to warrant a payment</em> </p>
       </section>
       <hr>
 
       <section>
-        <h3>Secretary Pay</h3>
+        <h3 id="myHeader">Secretary Pay</h3>
         <p>we all believe that the secretary <em>doesn't do enough to warrant a payment</em> </p>
       </section>
       <hr>
 
       <section>
-        <h3>CAT TIME</h3>
+        <h3 id="yayay">CAT TIME</h3>
         <details>
           <summary><strong>ONLY OPEN THIS WHEN YOU FEEL DOWN</strong></summary>
           <img class="fit-picture" src="cat.jpg" alt = "cute cat"/>
+          <br>
           <video controls width="250">
             <source src="catVideo.mp4" type="video/mp4" />
             <a href="cataVideo.mp4">MP4</a>
           </video>
+          <br>
           <figure>
+            <a href="https://www.youtube.com/watch?v=YJywFC7nCzU">Another Cat Video</a>
+            <br>
             <figcaption>Listen to the Cats:</figcaption>
             <audio controls src="catAudio.mp3"></audio>
+            <br>
             <a href="catAudio.mp3"> Download audio </a>
           </figure>
-
-
         </details>
       </section>
       <hr>
 
       <section>
-        <h3>Designer Pay</h3>
+        <h3 id="myHeader">Designer Pay</h3>
         <p>we all believe that the designer <em>doesn't do enough to warrant a payment</em> </p>
       </section>
       <hr>
 
       <section>
-        <h3>Moral Support Pay</h3>
+        <h3 id="myHeader">Moral Support Pay</h3>
         <p>we all believe that the moral support <em>is truly the carry of the team and deserve all of the profits</em> <br>
             I <em>wasnt</em> paid off by the moral support</p>
       </section>
@@ -82,16 +92,16 @@
     <hr>
 
     <footer>
-      <h2>TLDR</h2>
+      <h2 id="myHeader">TLDR</h2>
         <p>We are discussing the <b>pay</b> that each role should get</p>
         <ol>
-          <li>Lead gets payed in <strong>exposure</strong></li>
-          <li>Secretary gets payed in <strong>exposure</strong></li>
-          <li>Designer gets payed in <strong>exposure</strong></li>
-          <li>Moral Support gets payed in <strong>USD</strong></li>
+          <li class="payed">Lead gets payed in <strong class="payed">exposure</strong></li>
+          <li class="payed">Secretary gets payed in <strong class="payed">exposure</strong></li>
+          <li class="payed">Designer gets payed in <strong class="payed">exposure</strong></li>
+          <li class="payed">Moral Support gets payed in <strong class="payed">USD</strong></li>
         </ol>
       <hr>
-      <h2>Credits</h2>
+      <h2 id="myHeader">Credits</h2>
       <ul>
         <li>Lead: Me</li>
         <li>Secretary: Me</li>
@@ -103,14 +113,14 @@
     <hr>
     <hr>
 
-    <form>
+    <form class="box">
       <label>Write Your Name For Attendance: </label>
       <input type="text"/>
     </form>
 
     <hr>
 
-    <form>
+    <form class="beatbox">
       <fieldset>
         <legend>favorite animals</legend>
         <input type="radio"/>
@@ -127,19 +137,19 @@
     <hr>
 
     <form>
-      <label> Input your birthday:</label>
+      <label class="abc"> Input your birthday:</label>
       <input type="date"/>
     </form>
 
     <hr>
 
-    <label>Write your will</label><br>
+    <label class="abc">Write your will</label><br>
     <textarea>
     </textarea>
 
     <hr>
 
-    <label>Choose your favorite programming language</label>
+    <label class="abc">Choose your favorite programming language</label>
     <input list="languages"/>
     <datalist id="languages">
       <option value="Java"></option>
@@ -150,7 +160,7 @@
 
     <hr>
 
-    <label>Choose your favorite programming language part 2</label>
+    <label class="abc">Choose your favorite programming language part 2</label>
     <select name="java" id="language">
       <option value="">----Please Choose an Option----</option>
       <option value="Java">Java</option>
